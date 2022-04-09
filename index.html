@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3' crossorigin='anonymous'>
+
+    <title>Atividade 01 - ISMD</title>
+</head>
+<body class='container py-3'>
+    <header>
+        <div class='d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom'>
+            <a class='d-flex flex-column align-items-left text-dark text-decoration-none'>
+              <span class='fs-5'>UNIVERSIDADE FEDERAL DO CEARÁ </span>
+              <p>INSTITUTO UNIVERSIDADE VIRTUAL</p>
+              <p>GRADUAÇÃO EM SISTEMAS E MÍDIAS DIGITAIS</p>
+              <p>DISCIPLINA DE INTRODUÇÃO AO SISTEMAS E MÍDIAS DIGITAIS</p>
+            </a>
+      
+            <div class='d-flex flex-column mt-2 mt-md-0 ms-md-auto'>
+                <span class='fs-5 mb-1'>Atividade - 01 </span>
+                <p style='margin: 0px;'>Mariana Almeida Batista Nascimento - 520053</p>
+                <p>Paula Edmara Rocha - 541876</p>
+            </div>
+        </div>
+    </header>
+
+    <main class='d-flex flex-column align-items-center'>
+
+        <h1 class='title text-center mb-5'>Escolha qual dessas definições deseja ler:</h1>
+
+        <div class='text-center'>
+            <button id='1' type='button' class='btn btn-primary me-md-2'>Multimída</button>
+            <button id='2' type='button' class='btn btn-primary me-md-2'>Interação</button>
+            <button id='3' type='button' class='btn btn-primary me-md-2'>Analógico</button>
+            <button id='4' type='button' class='btn btn-primary  me-md-2'>Digital</button>
+            <button id='5' type='button' class='btn btn-dark'>Impressões sobre a exposição</button>
+        </div>
+
+        <div class='card mt-5 text-center' style='width: 50rem; display:none'>
+            <div class='card-body'>
+              <p class='card-text'>Quanto à multimídia, a dupla concorda que, na gravação, é possível observar o uso de diversos recursos. Eles estão presentes nos suportes de comunicação, isso é, . Assim, considera-se multimídias as superfícies usadas para escrever os  poemas em papéis comestíveis, no último petisco - que continha uma mensagem escrita - e nos pratos e o vídeo que é projetado na mesa na qual a plateia é servida. Nessa parte houve consenso.</p>
+            </div>
+        </div>
+
+        <p class='mt-4 text-muted'>COMO penso como. Direção de Vinicius Zamboni. Realização de Sesc. Roteiro: Simone Mattar. São Paulo, 2013. 1 vídeo (9 min 25s.), son., color. </p> 
+        <p class='text-muted' style='margin: 0px;'>Disponível em: <a href ='https://www.youtube.com/watch?v=Kgv0ndJjhyE.'>https://www.youtube.com/watch?v=Kgv0ndJjhyE.</a></p>
+    </main>
+
+    <script>
+        const card = document.querySelector('.card');
+        const cardText = document.querySelector('.card-text');
+        const btn1 = document.getElementById('1');
+        const btn2 = document.getElementById('2');
+        const btn3 = document.getElementById('3');
+        const btn4 = document.getElementById('4');
+        const btn5 = document.getElementById('5');
+    
+        btn1.onclick = () => {
+            card.style.display = 'block';
+            cardText.innerHTML = 'Quanto à multimídia, a dupla concorda que, na gravação, é possível observar o uso de diversos recursos. Eles estão presentes nos suportes de comunicação, isso é, . Assim, considera-se multimídias as superfícies usadas para escrever os  poemas em papéis comestíveis, no último petisco - que continha uma mensagem escrita - e nos pratos e o vídeo que é projetado na mesa na qual a plateia é servida. Nessa parte houve consenso.';
+        }
+    
+        btn2.onclick = () => {
+            card.style.display = 'block';
+            cardText.innerHTML = 'Edmara foi quem pontuou a interação, que acontecia por meio do contraste das expectativas dos participantes em relação ao prato apresentado e o real sabor do mesmo. De modo que, cada um tem sua respectiva reação e surpresa com o que é experimentado. Para Mariana, a interação também consiste na mistura de sensações, causadas pela exploração dos cinco sentidos humanos: paladar, visão, audição, tato e, talvez, olfato. Sob essa perspectiva, pode-se considerar como interação as reações do público ao ambiente e seus atores, como: degustar os alimentos, assistir aos vídeos e à dança, ouvir o que era dito nos auto-falantes, a música ou as rimas, ler os poemas e rasgá-los, enfim, qualquer ato que significasse “mexer” na arte ou na comida.';
+        }
+    
+        btn3.onclick = () => {
+            card.style.display = 'block';
+            cardText.innerHTML = 'No modo de produção também é perceptível a utilização do Design Thinking através da atenção à inovação de produtos e processos centrados em solução de problemas e melhoria do que já existe. O método para chegar a isso foi analógico, envolvendo a divisão de funções, sistematização das etapas e produção manual de alimentos - pois, apesar de serem concebidos em máquinas, eram feitos por pessoas, com variações. Tudo isso também caracteriza o espetáculo como um ótimo exemplo de Experiência do Usuário fora do contexto digital, com pessoas trabalhando em equipe para conduzir o usuário a um consumo mais do que satisfatório: sem qualquer problema, com expectativas atendidas e ainda com surpresas positivas.';
+        }
+    
+    
+        btn4.onclick = () => {
+            card.style.display = 'block';
+            cardText.innerHTML = 'Sobre a questão do analógico ou digital, a percepção a respeito de seu uso fica mais nítida em alguns momentos e menos delimitada em outros. \n\n Por exemplo, o vídeo que é exibido nas mesas pode ter sido gravado de forma analógica - tendo usado luz para a gravação em película de filme e um projetor analógico - ou apenas ter imitado a técnica. Sendo assim, não há uma resposta conclusiva de qual categoria se encaixaria. Também, a música parece ser - ou imitar - uma produção analógica, feita com batidas de instrumentos musicais simples e obtida por meio de batidas.\n Por outro lado, há certeza sobre o método de produção dos desenhos, os quais começaram sendo projetados por designers gráficos em softwares (de forma digital) e, depois, foram testados pela equipe de gastronomia e culinária, encaixando-se bem no sentido de analógico. ';
+        }
+    
+        btn5.onclick = () => {
+            card.style.display = 'block';
+            cardText.innerHTML = '“Como penso como” é uma exposição de arte que abrange as áreas de literatura, audiovisual e gastronomia misturando elementos da cultura urbana do sudeste ao regionalismo nordestino - aparentemente.';
+        }
+    </script>
+</body>
+</html>
